@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: crimson;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+}
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+.animation1 {
+    opacity: 0;
+    transform: translateX(+300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+}
+.scroll-animation1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* *********** services Page ************* */
+.services, .last{
+    width: 100%;
+    height: 100vh;
+    padding-top: 3.5rem;
+    background-color: orange;
+    
+}
+.last{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(236, 164, 28, 0.749);
+    font-size: 3rem;
+}
+.services .container, .last .container{
+    width: 100%;
+    height: 450px;
+    /* background-color: whitesmoke; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* opacity: 0.1; */
+}
+.active1{
+    opacity: 1;
+}
+
+.container .card{
+    flex: 0 0 20%;
+    background-color: white;
+    height: 70%;
+    transition: ease-in .5s;
+    background-position: center;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    /* padding: 1rem; */
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.img1{
+    background-image: url("images/img1.webp");    
+}
+.img2{
+    background-image: url("images/img3.webp");
+}
+.img3{
+    background-image: url("images/img2.webp");
+}
+.img4{
+    background-image: url("images/img4.jpg");    
+}
+.img5{
+    background-image: url("images/img5.jpg");
+}
+.img6{
+    background-image: url("images/img6.jpg");
+}
+.services h1,.last h1{
+    text-align: center;
+    font-size: 4rem;
+}
